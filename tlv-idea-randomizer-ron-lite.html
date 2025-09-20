@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>מחולל רעיונות — LITE</title>
+  <style>
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial;background:#0b1020;color:#e8eefc}
+    .wrap{max-width:900px;margin:0 auto;padding:24px}
+    h1{font-size:20px;margin:0 0 12px 0}
+    .grid{display:grid;gap:12px;grid-template-columns:repeat(3,1fr)}
+    @media (max-width:900px){.grid{grid-template-columns:1fr}}
+    textarea{width:100%;min-height:170px;background:#0b132d;color:#e8eefc;border:1px solid #2a3b7a;border-radius:12px;padding:10px;font-size:14px}
+    button{appearance:none;border:1px solid #2a3b7a;background:#16214a;color:#e8eefc;padding:10px 14px;border-radius:12px;cursor:pointer;margin-right:6px}
+    .chips{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0}
+    .chip{padding:6px 10px;border-radius:999px;background:#1b2754;border:1px solid #2a3b7a;font-size:13px}
+    .muted{color:#a9b3c9;font-size:12px}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>מחולל רעיונות — עדשה × מקום × פעולה (LITE)</h1>
+    <div class="grid">
+      <div>
+        <h3>עדשות</h3>
+        <textarea id="listA">אנשים/קהילה
+מרחב ציבורי
+תנועה/ניידות
+תרבות/אמנות
+סביבה/טבע עירוני
+כלכלה/עבודה/מסחר
+נגישות/שוויון
+בריאות/רווחה
+ממשל/שירותים עירוניים
+היסטוריה/מורשת
+דיור/ג׳נטריפיקציה
+תיירות/אירוח
+ביטחון אישי/חיי לילה
+חדשנות/יזמות</textarea>
+      </div>
+      <div>
+        <h3>מקומות</h3>
+        <textarea id="listB">שוק הכרמל
+שוק לווינסקי
+שוק התקווה
+שוק הפשפשים
+נחלת בנימין
+פלורנטין
+נווה צדק
+כרם התימנים
+לב העיר
+הצפון הישן
+הצפון החדש
+שדרות רוטשילד
+כיכר הבימה
+היכל התרבות
+כיכר דיזנגוף
+כיכר רבין
+בית העיר
+שרונה
+שרונה מרקט
+נמל תל אביב
+המרינה תל אביב
+יריד המזרח
+שוק האיכרים בנמל
+טיילת הרברט סמואל
+טיילת צ'רלס קלור
+פארק צ'רלס קלור
+חוף גורדון
+חוף פרישמן
+חוף בוגרשוב
+חוף ירושלים
+גבעת עלייה
+טיילת יפו
+נמל יפו
+כיכר השעון
+יפו העתיקה
+גן הפסגה
+עג'מי
+שדרות ירושלים
+פארק המסילה
+מרכז פרס לשלום ולחדשנות
+בית הסראייה
+בית קנדינוף
+מוזיאון אילנה גור
+מסגד חסן בק
+בית הכנסת הגדול
+בית ביאליק
+בית בן גוריון
+בית העצמאות
+מוזיאון תל אביב לאמנות
+מוזיאון ארץ ישראל
+תל קסילה
+תל כודאדי
+מוזיאון נחום גוטמן
+מוזיאון העם היהודי
+מוזיאון הפלמ"ח
+מרכז יצחק רבין
+הסינמטק
+התיאטרון הקאמרי
+הבימה
+בית האופרה
+היכל מנורה מבטחים
+אצטדיון בלומפילד
+אצטדיון הדר יוסף
+אוניברסיטת תל אביב
+מוזיאון הטבע שטיינהרדט
+בית הספר פורטר לסביבה
+הגן הבוטני אוניברסיטת תל אביב
+פארק הירקון
+שפך הירקון
+גשר הירקון
+גן מאיר
+המרכז הגאה
+גן העצמאות
+כיכר אתרים
+רחוב דיזנגוף
+רחוב שינקין
+רחוב קינג ג'ורג'
+רחוב אבן גבירול
+רחוב אלנבי
+רחוב הרצל
+רחוב שוקן
+רחוב לוינסקי
+שדרות בן גוריון
+שדרות ח"ן
+שדרות נורדאו
+שדרות וושינגטון
+שכונת שפירא
+שכונת נווה שאנן
+שכונת התקווה
+כפר שלם
+קריית שלום
+יד אליהו
+מתחם התחנה
+דרך יפו תל אביב
+בית יאיר
+מוזיאון האצ"ל
+מוזיאון ההגנה
+בית אריאלה
+כיכר גבעון
+דיזנגוף סנטר
+קניון עזריאלי
+מגדלי עזריאלי
+תחנת תל אביב השלום
+תחנת תל אביב סבידור מרכז
+תחנת תל אביב האוניברסיטה
+תחנת תל אביב ההגנה
+התחנה המרכזית החדשה
+גשר יהודית
+פארק מנחם בגין
+פארק אריאל שרון
+פארק החורשות
+שוק צפון
+רמת החייל
+פארק עתידים
+מתחם בזל
+כיכר מילאנו
+העיר הלבנה
+קריית הממשלה
+הקריה
+תיאטרון גשר
+מרכז סוזן דלל
+האנגר 11
+האנגר 7
+כיכר מגן דוד
+רחוב בן יהודה
+רחוב בוגרשוב
+רחוב ירמיהו
+נחל איילון
+שביל אופניים פארק הירקון
+תחנות הקו האדום אלנבי
+תחנות הקו האדום יהודית
+תחנות הקו האדום שאול המלך
+תחנות הרק"ל שדרות ירושלים
+המכללה האקדמית תל אביב יפו
+בית המרכזים
+נא לגעת
+אנדרטת יצחק רבין
+מוזיאון ראובן רובין
+מוזיאון לתולדות תל אביב יפו
+המרכז הרפואי איכילוב
+שוק איכרים כיכר רבין
+שביל העצמאות
+בית הכנסת איצקוביץ'
+רחוב לילינבלום
+הבורסה לניירות ערך
+בית תמי
+שוק כפר שלם
+תחנת הכוח רדינג
+מגדל מים רמת אביב
+מועדון החתירה שפך הירקון
+בית המשפט תל אביב
+פארק קריית ספר
+רחוב יונה הנביא
+שביל אופניים שדרות ירושלים
+מגדל שלום</textarea>
+      </div>
+      <div>
+        <h3>פעולות</h3>
+        <textarea id="listC">לראיין
+למדוד
+למפות
+לספור
+להשוות
+לצלם
+להקליט
+לכתוב
+לתצפת
+לבחון
+להקליט סאונד
+לבצע סקר
+לבצע ניסוי
+לשרטט
+לתכנן מסלול
+למדוד זמן
+למדוד מרחק
+לבנות אינדקס/מדד
+להצליב מקורות
+לזהות תבניות/דפוסים
+לבנות משחק/אתגר
+לנתח</textarea>
+      </div>
+    </div>
+    <div style="margin:10px 0">
+      <button id="draw">הגרל רעיון</button>
+      <button id="draw3">הגרל 3 רעיונות</button>
+      <button id="copy">העתק תוצאה</button>
+      <button id="share">קישור שיתוף (HASH)</button>
+      <span class="muted" id="msg"></span>
+    </div>
+    <div class="chips" id="chips"></div>
+    <div id="combo" style="font-size:18px"></div>
+    <div id="multi"></div>
+  </div>
+  <script>
+    const $=s=>document.querySelector(s);
+    const parse=t=>t.split(/[\n,;]+/).map(s=>s.trim()).filter(Boolean);
+    const rand=a=>a[Math.floor(Math.random()*a.length)];
+    const drawOnce=()=>{
+      const A=parse($("#listA").value), B=parse($("#listB").value), C=parse($("#listC").value);
+      if(!A.length||!B.length||!C.length){ alert("חסרים פריטים ברשימות."); return null; }
+      const a=rand(A), b=rand(B), c=rand(C);
+      const chips=$("#chips"); chips.innerHTML=""; [a,b,c].forEach(t=>{const s=document.createElement("span"); s.className="chip"; s.textContent=t; chips.appendChild(s);});
+      $("#combo").textContent=`${a} × ${b} × ${c}`;
+      return {a,b,c};
+    };
+    $("#draw").addEventListener("click",()=>{ $("#multi").innerHTML=""; drawOnce(); });
+    $("#draw3").addEventListener("click",()=>{ 
+      $("#multi").innerHTML="";
+      const res=[]; for(let i=0;i<3;i++){ const r=drawOnce(); if(!r) return; res.push(r); }
+      const ul=document.createElement("ul"); ul.style.marginTop="8px";
+      res.forEach(({a,b,c},i)=>{ const li=document.createElement("li"); li.textContent=`${i+1}. ${a} × ${b} × ${c}`; ul.appendChild(li); });
+      $("#multi").appendChild(ul);
+    });
+    $("#copy").addEventListener("click",async()=>{ 
+      const t=$("#combo").textContent.trim(); if(!t){ alert("אין תוצאה להעתיק."); return; }
+      try{ await navigator.clipboard.writeText(t); $("#msg").textContent="הועתק ללוח."; setTimeout(()=>$("#msg").textContent="",2000); }catch{}
+    });
+    $("#share").addEventListener("click",async()=>{ 
+      const enc=s=>encodeURIComponent(s.replace(/\r\n/g,"\n"));
+      const url=(location.origin+location.pathname)+`#a=${enc($("#listA").value)}&b=${enc($("#listB").value)}&c=${enc($("#listC").value)}`;
+      try{ await navigator.clipboard.writeText(url); $("#msg").textContent="קישור הועתק."; setTimeout(()=>$("#msg").textContent="",2000); }catch{ alert(url); }
+    });
+    (function(){
+      if(!location.hash) return;
+      const p=new URLSearchParams(location.hash.substring(1));
+      const dec=s=>decodeURIComponent(s||"");
+      const a=dec(p.get("a")), b=dec(p.get("b")), c=dec(p.get("c"));
+      if(a) $("#listA").value=a;
+      if(b) $("#listB").value=b;
+      if(c) $("#listC").value=c;
+    })();
+  </script>
+</body>
+</html>
